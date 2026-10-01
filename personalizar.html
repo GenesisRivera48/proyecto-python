@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulador de personalización — GZ Studio</title>
+  <meta name="description" content="Diseña algo a tu estilo con el simulador local de GZ Studio: elige producto, color, material y texto, y observa la vista previa en tiempo real.">
+  <meta name="theme-color" content="#070f1e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos decorativos (CDN). Si no carga, la página sigue siendo 100% funcional. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1729'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23c9a227' text-anchor='middle'%3EGZ%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       HEADER / NAVEGACIÓN
+       ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="GZ Studio, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">GZ</span>
+        <span class="brand-text">GZ <em>Studio</em></span>
+      </a>
+
+      <nav class="nav" id="navPrincipal" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li><a class="nav-link" href="disenos.html">Diseños</a></li>
+          <li><a class="nav-link" href="personalizar.html">Personalizar</a></li>
+          <li><a class="nav-link" href="como-funciona.html">Cómo funciona</a></li>
+          <li><a class="nav-link" href="sistema.html">Sistema</a></li>
+        </ul>
+        <a href="catalogo.html" class="btn btn-gold nav-cta">Explorar catálogo</a>
+      </nav>
+
+      <button class="burger" id="btnMenu" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navPrincipal">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="contenido">
+
+    <!-- Encabezado de la vista -->
+    <section class="page-hero" aria-labelledby="pageHeroTitle">
+      <div class="container">
+        <nav class="crumbs reveal" aria-label="Ruta de navegación">
+          <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Personalizar</span>
+        </nav>
+        <h1 class="page-hero-title reveal" id="pageHeroTitle">Diseña algo a <em>tu estilo</em></h1>
+        <p class="page-hero-text reveal">
+          Una demostración local: elige producto, ajusta las opciones disponibles y mira la vista
+          previa cambiar al instante. Las opciones se adaptan a cada tipo de producto.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SIMULADOR DE PERSONALIZACIÓN
+         ============================================================ -->
+    <section class="section section-light section-tight" id="simulador" aria-labelledby="simuladorTitle">
+      <div class="container">
+        <h2 class="sr-only" id="simuladorTitle">Simulador de personalización</h2>
+
+        <div class="sim reveal">
+          <!-- Columna de controles -->
+          <div class="sim-controls">
+            <fieldset class="sim-block">
+              <legend class="sim-label"><span class="sim-step">01</span> Elige tu producto</legend>
+              <div class="sim-products" id="simProductos" role="radiogroup" aria-label="Tipo de producto"></div>
+            </fieldset>
+
+            <!-- Las opciones de este bloque cambian según el producto seleccionado. -->
+            <fieldset class="sim-block" id="simOpcionesWrap">
+              <legend class="sim-label"><span class="sim-step">02</span> <span id="simOpcionesTitulo">Personaliza tu producto</span></legend>
+              <div id="simOpciones"></div>
+            </fieldset>
+
+            <div class="sim-block">
+              <p class="sim-label"><span class="sim-step">03</span> Texto del diseño</p>
+              <label class="sr-only" for="simTexto">Texto que aparecerá en el producto</label>
+              <div class="field">
+                <input class="input" type="text" id="simTexto" name="simTexto" placeholder="Escribe algo, por ejemplo: GZ Studio" autocomplete="off" maxlength="40">
+                <span class="counter" id="simContador" aria-live="polite">0 / 40</span>
+              </div>
+              <p class="field-error" id="simTextoError" role="alert" hidden></p>
+              <p class="hint" id="simTextoHint">Máximo 40 caracteres.</p>
+            </div>
+
+            <div class="sim-actions">
+              <button class="btn btn-gold" type="button" id="btnGuardarDiseno">
+                <i class="fa-solid fa-check" aria-hidden="true"></i> Guardar mi diseño
+              </button>
+              <button class="btn btn-ghost btn-dark" type="button" id="btnReiniciar">Reiniciar</button>
+            </div>
+
+            <p class="sim-actions-alt">
+              <a class="btn btn-ghost btn-dark" href="catalogo.html">
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Ver todos los productos
+              </a>
+            </p>
+          </div>
+
+          <!-- Columna de vista previa -->
+          <div class="sim-preview">
+            <div class="preview-stage">
+              <p class="preview-tag">Vista previa</p>
+              <div class="preview-canvas" id="previewCanvas" aria-live="polite" aria-label="Vista previa del producto personalizado"></div>
+            </div>
+
+            <dl class="summary" id="resumenSim">
+              <div><dt>Producto</dt><dd id="resProducto">—</dd></div>
+              <div><dt>Opciones</dt><dd id="resOpciones">—</dd></div>
+              <div><dt>Texto</dt><dd id="resTexto">—</dd></div>
+              <div class="summary-total"><dt>Precio estimado</dt><dd id="resPrecio">—</dd></div>
+            </dl>
+            <p class="hint">Precios de ejemplo con fines demostrativos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LLAMADA A LA ACCIÓN
+         ============================================================ -->
+    <section class="section cta" aria-labelledby="ctaTitle">
+      <div class="container cta-inner reveal">
+        <h2 class="cta-title" id="ctaTitle">¿Te gustó cómo quedó?</h2>
+        <p class="cta-text">Ese es justo el flujo del sistema real: elegir producto, aplicar un diseño y registrar el pedido.</p>
+        <div class="cta-actions">
+          <a href="como-funciona.html" class="btn btn-gold">Ver cómo funciona <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="disenos.html" class="btn btn-outline">Explorar diseños</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">GZ</span>
+        <p class="footer-name">GZ <em>Studio</em></p>
+        <p class="footer-tagline">Personaliza. Crea. Hazlo tuyo.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <p class="footer-col-title">Navegación</p>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="disenos.html">Diseños</a></li>
+          <li><a href="personalizar.html">Personalizar</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="sistema.html">Sistema</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <p class="footer-col-title">El proyecto</p>
+        <p class="footer-desc">
+          Tienda ficticia de productos personalizados desarrollada como proyecto informático.
+          Sistema principal en <strong>Python</strong> con base de datos <strong>MySQL</strong>.
+        </p>
+        <p class="footer-desc">Esta página es una demostración local: no requiere servidor ni realiza compras reales.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>Proyecto académico — GZ Studio</p>
+        <p><span class="dot" aria-hidden="true"></span> Hecho con HTML, CSS y JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="btnTop" type="button" aria-label="Volver al inicio" hidden>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Aviso emergente para acciones de demostración -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

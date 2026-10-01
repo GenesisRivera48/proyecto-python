@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Taza personalizada">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#13253f"/><stop offset="1" stop-color="#070f1e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#d9b45a" stop-opacity=".26"/><stop offset="1" stop-color="#d9b45a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf8f2"/><stop offset="1" stop-color="#ded8cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <rect x="18" y="18" width="764" height="564" fill="none" stroke="#c9a227" stroke-opacity=".32" stroke-width="1.5"/>
+  <g>
+    <path d="M470 268 C566 264 566 380 466 376" fill="none" stroke="url(#cloth)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M292 214 L474 214 L456 424 C455 437 444 446 431 446 L335 446 C322 446 311 437 310 424 Z" fill="url(#cloth)"/>
+    <ellipse cx="383" cy="214" rx="91" ry="21" fill="#0d1c33" fill-opacity=".18"/>
+    <ellipse cx="383" cy="214" rx="91" ry="21" fill="none" stroke="#c9a227" stroke-width="4"/>
+    <circle cx="383" cy="332" r="50" fill="none" stroke="#0d1c33" stroke-opacity=".75" stroke-width="3"/>
+    <text x="383" y="346" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#0d1c33" fill-opacity=".82" letter-spacing="2">GZ</text>
+  </g>
+  <text x="40" y="556" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" letter-spacing="3" fill="#e9e4d8" fill-opacity=".5">PLACEHOLDER &#183; REEMPLAZAR POR assets/img/products/taza.svg</text>
+</svg>
