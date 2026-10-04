@@ -2465,3 +2465,202 @@ h1, h2, h3, h4 {
 @media (max-width: 640px) {
   .pick-upload { padding: 14px 20px 0; }
 }
+
+/* ==========================================================================
+   AJUSTE RESPONSIVE DEL SIMULADOR — SOLO CSS
+   ========================================================================== */
+
+.sim,
+.sim-controls,
+.sim-preview,
+.preview-stage,
+.preview-canvas {
+  min-width: 0;
+}
+
+@media (max-width: 980px) {
+  .sim {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .sim-controls,
+  .sim-preview {
+    width: 100%;
+  }
+
+  .sim-preview {
+    position: static;
+  }
+
+  .preview-canvas {
+    width: 100%;
+    min-height: clamp(250px, 68vw, 360px);
+  }
+
+  .preview-canvas canvas,
+  .preview-canvas svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  #simulador .container {
+    padding-inline: 14px;
+  }
+
+  .sim {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .sim-controls,
+  .sim-preview {
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+
+  .sim-label {
+    gap: 9px;
+    font-size: .72rem;
+    letter-spacing: .08em;
+  }
+
+  .sim-step {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sim-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .sim-product {
+    min-width: 0;
+    padding: 12px 6px;
+    font-size: .76rem;
+  }
+
+  .sim-product svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .opt-choices {
+    gap: 8px;
+  }
+
+  .opt {
+    max-width: 100%;
+    padding: 9px 12px;
+    font-size: .76rem;
+  }
+
+  .opt-colors {
+    gap: 10px;
+  }
+
+  .opt-color {
+    width: 38px;
+    height: 38px;
+  }
+
+  .design-pick {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .design-pick > .btn {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .design-picked {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .design-picked-info {
+    overflow-wrap: anywhere;
+  }
+
+  .sim-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sim-actions .btn,
+  .sim-actions-alt .btn {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .preview-stage {
+    padding: 36px 8px 12px;
+  }
+
+  .preview-canvas {
+    min-height: 250px;
+    height: min(72vw, 330px);
+  }
+
+  .preview-canvas canvas {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    height: 100% !important;
+  }
+
+  .summary > div {
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .summary dt {
+    font-size: .64rem;
+    letter-spacing: .07em;
+  }
+
+  .summary dd {
+    min-width: 0;
+    font-size: .82rem;
+    overflow-wrap: anywhere;
+  }
+
+  .summary-total dd {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #simulador .container {
+    padding-inline: 10px;
+  }
+
+  .sim-controls,
+  .sim-preview {
+    padding: 15px 11px;
+  }
+
+  .sim-products {
+    gap: 7px;
+  }
+
+  .sim-product {
+    font-size: .7rem;
+  }
+
+  .summary > div {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .summary dd {
+    text-align: left;
+  }
+}
