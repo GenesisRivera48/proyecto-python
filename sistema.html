@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El sistema — GZ Studio</title>
+  <meta name="description" content="Módulos de gestión de GZ Studio: productos, diseños, pedidos y clientes, además de un recorrido visual por la interfaz administrativa.">
+  <meta name="theme-color" content="#070f1e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos decorativos (CDN). Si no carga, la página sigue siendo 100% funcional. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1729'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23c9a227' text-anchor='middle'%3EGZ%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       HEADER / NAVEGACIÓN
+       ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="GZ Studio, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">GZ</span>
+        <span class="brand-text">GZ <em>Studio</em></span>
+      </a>
+
+      <nav class="nav" id="navPrincipal" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li><a class="nav-link" href="disenos.html">Diseños</a></li>
+          <li><a class="nav-link" href="personalizar.html">Personalizar</a></li>
+          <li><a class="nav-link" href="como-funciona.html">Cómo funciona</a></li>
+          <li><a class="nav-link" href="sistema.html">Sistema</a></li>
+        </ul>
+        <a href="catalogo.html" class="btn btn-gold nav-cta">Explorar catálogo</a>
+      </nav>
+
+      <button class="burger" id="btnMenu" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navPrincipal">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="contenido">
+
+    <!-- Encabezado de la vista -->
+    <section class="page-hero" aria-labelledby="pageHeroTitle">
+      <div class="container">
+        <nav class="crumbs reveal" aria-label="Ruta de navegación">
+          <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Sistema</span>
+        </nav>
+        <h1 class="page-hero-title reveal" id="pageHeroTitle">El proyecto detrás de la <em>tienda</em></h1>
+        <p class="page-hero-text reveal">
+          GZ Studio no es solo un catálogo: es un sistema de gestión que permite administrar
+          productos, diseños, pedidos y clientes desde una misma interfaz.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FUNCIONES DEL SISTEMA (tarjetas expandibles)
+         ============================================================ -->
+    <section class="section section-light section-tight" id="funciones" aria-labelledby="funcionesTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Módulos</p>
+          <h2 class="section-title" id="funcionesTitle">Todo bajo control</h2>
+          <p class="section-sub">Cuatro módulos que le permiten al administrador operar el negocio completo. Haz clic en cada tarjeta para ver más.</p>
+        </header>
+
+        <div class="grid grid-features">
+          <article class="feature reveal" data-feature>
+            <button class="feature-btn" type="button" aria-expanded="false">
+              <span class="feature-icon"><i class="fa-solid fa-box-open" aria-hidden="true"></i></span>
+              <h3>Gestión de productos</h3>
+              <p>Permite registrar y administrar los productos disponibles en la tienda.</p>
+              <span class="feature-more">
+                Cada producto guarda nombre, categoría, precio, stock e imagen. Al crear o actualizar un registro, el sistema valida los datos antes de escribirlos en MySQL y el catálogo del cliente se refleja al instante.
+              </span>
+              <span class="feature-toggle" aria-hidden="true">Ver más<i class="fa-solid fa-plus"></i></span>
+            </button>
+          </article>
+
+          <article class="feature reveal" data-feature>
+            <button class="feature-btn" type="button" aria-expanded="false">
+              <span class="feature-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></span>
+              <h3>Gestión de diseños</h3>
+              <p>Permite administrar los diseños utilizados para la personalización.</p>
+              <span class="feature-more">
+                Los diseños se organizan por categoría y quedan disponibles tanto en la galería pública como en el simulador. El administrador puede subir nuevas piezas, editarlas o darlas de baja sin afectar los pedidos ya registrados.
+              </span>
+              <span class="feature-toggle" aria-hidden="true">Ver más<i class="fa-solid fa-plus"></i></span>
+            </button>
+          </article>
+
+          <article class="feature reveal" data-feature>
+            <button class="feature-btn" type="button" aria-expanded="false">
+              <span class="feature-icon"><i class="fa-solid fa-receipt" aria-hidden="true"></i></span>
+              <h3>Gestión de pedidos</h3>
+              <p>Permite consultar y gestionar los pedidos realizados por los clientes.</p>
+              <span class="feature-more">
+                Cada pedido se compone de una cabecera y un detalle con los productos elegidos. El administrador cambia el estado (pendiente, en producción, entregado o cancelado) y el cliente puede dar seguimiento desde su perfil.
+              </span>
+              <span class="feature-toggle" aria-hidden="true">Ver más<i class="fa-solid fa-plus"></i></span>
+            </button>
+          </article>
+
+          <article class="feature reveal" data-feature>
+            <button class="feature-btn" type="button" aria-expanded="false">
+              <span class="feature-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+              <h3>Gestión de clientes</h3>
+              <p>Permite visualizar y administrar las cuentas registradas en el sistema.</p>
+              <span class="feature-more">
+                Se consulta el historial de compras, los datos de contacto y los diseños guardados de cada cliente. La información sensible se administra desde la base de datos con usuarios y permisos diferenciados.
+              </span>
+              <span class="feature-toggle" aria-hidden="true">Ver más<i class="fa-solid fa-plus"></i></span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRESENTACIÓN DE LA INTERFAZ (mockup + botones)
+         ============================================================ -->
+    <section class="section" id="sistema" aria-labelledby="sistemaTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Interfaz administrativa</p>
+          <h2 class="section-title" id="sistemaTitle">Conoce nuestro sistema</h2>
+          <p class="section-sub">Así se ve el panel donde el administrador opera GZ Studio. Selecciona un módulo para verlo en pantalla.</p>
+        </header>
+
+        <div class="system reveal">
+          <div class="laptop">
+            <div class="laptop-screen">
+              <span class="laptop-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <!-- IMÁGENES DEL SISTEMA: reemplaza los archivos de assets/img/system/ por capturas reales (misma proporción 16:10). -->
+              <img id="pantallaSistema" src="assets/img/system/inicio.svg" alt="Captura de la interfaz administrativa de GZ Studio: módulo de inicio" data-img>
+            </div>
+            <div class="laptop-base" aria-hidden="true"><span></span></div>
+          </div>
+
+          <div class="system-panel">
+            <div class="system-tabs" role="tablist" aria-label="Módulos del sistema" id="tabsSistema">
+              <button class="sys-tab is-active" type="button" role="tab" aria-selected="true" data-pantalla="inicio">Inicio</button>
+              <button class="sys-tab" type="button" role="tab" aria-selected="false" data-pantalla="productos">Productos</button>
+              <button class="sys-tab" type="button" role="tab" aria-selected="false" data-pantalla="diseno">Diseños</button>
+              <button class="sys-tab" type="button" role="tab" aria-selected="false" data-pantalla="pedidos">Pedidos</button>
+              <button class="sys-tab" type="button" role="tab" aria-selected="false" data-pantalla="Mi perfil">Perfil</button>
+            </div>
+            <p class="system-desc" id="systemDesc" aria-live="polite"></p>
+            <p class="hint">Las imágenes son placeholders: sustitúyelos por las capturas reales de tu sistema.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">GZ</span>
+        <p class="footer-name">GZ <em>Studio</em></p>
+        <p class="footer-tagline">Personaliza. Crea. Hazlo tuyo.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <p class="footer-col-title">Navegación</p>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="disenos.html">Diseños</a></li>
+          <li><a href="personalizar.html">Personalizar</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="sistema.html">Sistema</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <p class="footer-col-title">El proyecto</p>
+        <p class="footer-desc">
+          Tienda ficticia de productos personalizados desarrollada como proyecto informático.
+        </p>
+        <p class="footer-desc">Esta página es una demostración local: no requiere servidor ni realiza compras reales.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>Proyecto académico — GZ Studio</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="btnTop" type="button" aria-label="Volver al inicio" hidden>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Aviso emergente para acciones de demostración -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

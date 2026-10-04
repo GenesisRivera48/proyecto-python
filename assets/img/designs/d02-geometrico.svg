@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Diseño Geométrico">
+  <defs>
+    <linearGradient id="marble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf7f1"/><stop offset="1" stop-color="#e3dfd6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2c479"/><stop offset="1" stop-color="#a3801f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#marble)"/>
+  <g stroke="#0d1c33" stroke-opacity=".8" stroke-width="3" fill="none">
+    <path d="M400 120 L540 360 L260 360 Z"/>
+    <circle cx="400" cy="288" r="112"/>
+  </g>
+  <g stroke="url(#gold)" stroke-width="3" fill="none">
+    <path d="M400 176 L496 340 L304 340 Z"/>
+    <path d="M288 288 L512 288"/>
+  </g>
+  <circle cx="400" cy="288" r="16" fill="url(#gold)"/>
+  <text x="400" y="486" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" letter-spacing="12" fill="#0d1c33" fill-opacity=".7">GEOMETRIA</text>
+  <text x="40" y="556" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#0d1c33" fill-opacity=".4">PLACEHOLDER &#183; assets/img/designs/d02-geometrico.svg</text>
+</svg>

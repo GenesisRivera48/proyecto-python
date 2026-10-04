@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — GZ Studio</title>
+  <meta name="description" content="Catálogo de productos personalizados de GZ Studio: camisas, tazas, llaveros, sudaderas, tote bags y vasos con ficha detallada y opciones.">
+  <meta name="theme-color" content="#070f1e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos decorativos (CDN). Si no carga, la página sigue siendo 100% funcional. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="../22e417d1/assets/img/products/sueter.jpg" viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1729'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23c9a227' text-anchor='middle'%3EGZ%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       HEADER / NAVEGACIÓN
+       ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="GZ Studio, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">GZ</span>
+        <span class="brand-text">GZ <em>Studio</em></span>
+      </a>
+
+      <nav class="nav" id="navPrincipal" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li><a class="nav-link" href="disenos.html">Diseños</a></li>
+          <li><a class="nav-link" href="personalizar.html">Personalizar</a></li>
+          <li><a class="nav-link" href="como-funciona.html">Cómo funciona</a></li>
+          <li><a class="nav-link" href="sistema.html">Sistema</a></li>
+        </ul>
+        <a href="catalogo.html" class="btn btn-gold nav-cta">Explorar catálogo</a>
+      </nav>
+
+      <button class="burger" id="btnMenu" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navPrincipal">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="contenido">
+
+    <!-- Encabezado de la vista -->
+    <section class="page-hero" aria-labelledby="pageHeroTitle">
+      <div class="container">
+        <nav class="crumbs reveal" aria-label="Ruta de navegación">
+          <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Catálogo</span>
+        </nav>
+        <h1 class="page-hero-title reveal" id="pageHeroTitle">Explora nuestro <em>catálogo</em></h1>
+        <p class="page-hero-text reveal">
+          Cada producto es un lienzo. Filtra por categoría, abre la ficha para ver sus opciones
+          y da el salto al simulador cuando quieras empezar a diseñarlo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CATÁLOGO + FILTROS
+         Las tarjetas se generan desde script.js (arreglo PRODUCTOS).
+         ============================================================ -->
+    <section class="section section-light section-tight" id="catalogo" aria-labelledby="catalogoTitle">
+      <div class="container">
+        <h2 class="sr-only" id="catalogoTitle">Productos disponibles</h2>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar productos por categoría" id="filtrosCatalogo">
+          <button class="chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-filter="camisas" aria-pressed="false">Camisas</button>
+          <button class="chip" type="button" data-filter="tazas" aria-pressed="false">Tazas</button>
+          <button class="chip" type="button" data-filter="llaveros" aria-pressed="false">Llaveros</button>
+          <button class="chip" type="button" data-filter="otros" aria-pressed="false">Otros</button>
+        </div>
+
+        <div class="grid grid-products" id="gridProductos" aria-live="polite"></div>
+        <p class="empty-state" id="emptyCatalogo" hidden>No hay productos en esta categoría.</p>
+
+        <p class="section-next reveal">
+          ¿Ya sabes qué quieres?
+          <a href="personalizar.html" class="btn btn-gold">Abrir el simulador <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LLAMADA A LA ACCIÓN
+         ============================================================ -->
+    <section class="section cta" aria-labelledby="ctaTitle">
+      <div class="container cta-inner reveal">
+        <h2 class="cta-title" id="ctaTitle">Convierte una idea en algo único.</h2>
+        <p class="cta-text">Explora el catálogo, prueba el simulador y descubre cómo GZ Studio lleva tu diseño a un producto real.</p>
+        <div class="cta-actions">
+          <a href="personalizar.html" class="btn btn-gold">Personalizar ahora <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="disenos.html" class="btn btn-outline">Ver galería de diseños</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">GZ</span>
+        <p class="footer-name">GZ <em>Studio</em></p>
+        <p class="footer-tagline">Personaliza. Crea. Hazlo tuyo.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <p class="footer-col-title">Navegación</p>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="disenos.html">Diseños</a></li>
+          <li><a href="personalizar.html">Personalizar</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="sistema.html">Sistema</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <p class="footer-col-title">El proyecto</p>
+        <p class="footer-desc">
+          Tienda ficticia de productos personalizados desarrollada como proyecto informático.
+        </p>
+        <p class="footer-desc">Esta página es una demostración local: no requiere servidor ni realiza compras reales.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>Proyecto académico — GZ Studio</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="btnTop" type="button" aria-label="Volver al inicio" hidden>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ============================================================
+       MODAL DE PRODUCTO (contenido generado por script.js)
+       ============================================================ -->
+  <div class="modal" id="modalProducto" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalProductoTitulo">
+      <button class="modal-close" type="button" data-close-modal aria-label="Cerrar ventana de producto">&times;</button>
+      <div class="modal-body" id="modalProductoBody"></div>
+    </div>
+  </div>
+
+  <!-- Aviso emergente para acciones de demostración -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

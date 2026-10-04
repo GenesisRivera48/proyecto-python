@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Interfaz administrativa - Productos">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2c479"/><stop offset="1" stop-color="#a3801f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="#0b1729"/>
+  <rect width="250" height="800" fill="#071020"/>
+  <circle cx="56" cy="54" r="20" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <text x="56" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="url(#gold)">GZ</text>
+  <text x="88" y="50" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#f3efe6" letter-spacing="2">GZ STUDIO</text>
+  <text x="88" y="70" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#8d9ab0" letter-spacing="3">ADMIN PANEL</text>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14">
+    <text x="60" y="152" fill="#8d9ab0">Inicio</text>
+    <rect x="24" y="180" width="202" height="42" rx="11" fill="#12233f"/>
+    <rect x="24" y="180" width="4" height="42" rx="2" fill="url(#gold)"/>
+    <text x="60" y="206" fill="#f3efe6">Productos</text>
+    <text x="60" y="260" fill="#8d9ab0">Diseños</text>
+    <text x="60" y="314" fill="#8d9ab0">Pedidos</text>
+    <text x="60" y="368" fill="#8d9ab0">Clientes</text>
+    <text x="60" y="422" fill="#8d9ab0">Reportes</text>
+  </g>
+  <g fill="#3d4c66">
+    <rect x="38" y="142" width="12" height="12" rx="3"/><rect x="38" y="250" width="12" height="12" rx="3"/>
+    <rect x="38" y="304" width="12" height="12" rx="3"/><rect x="38" y="358" width="12" height="12" rx="3"/>
+    <rect x="38" y="412" width="12" height="12" rx="3"/>
+  </g>
+  <rect x="38" y="196" width="12" height="12" rx="3" fill="url(#gold)"/>
+
+  <rect x="250" y="0" width="1030" height="84" fill="#0e1e36"/>
+  <text x="290" y="50" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#f3efe6">Gestión de productos</text>
+  <circle cx="1210" cy="43" r="17" fill="url(#gold)" fill-opacity=".25" stroke="url(#gold)" stroke-width="2"/>
+
+  <rect x="290" y="124" width="950" height="634" rx="16" fill="#101f37" stroke="#c9a227" stroke-opacity=".14"/>
+  <rect x="314" y="152" width="260" height="38" rx="19" fill="#0b1729"/>
+  <text x="336" y="176" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#8d9ab0">Buscar producto...</text>
+  <rect x="1064" y="152" width="152" height="38" rx="19" fill="url(#gold)"/>
+  <text x="1140" y="176" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#0b1729">+ Nuevo producto</text>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#8d9ab0" letter-spacing="1">
+    <text x="360" y="234">PRODUCTO</text><text x="640" y="234">CATEGORIA</text>
+    <text x="800" y="234">PRECIO</text><text x="930" y="234">STOCK</text><text x="1050" y="234">ESTADO</text>
+  </g>
+  <path d="M314 248 L1216 248" stroke="#243752" stroke-width="2"/>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#f3efe6">
+    <g><rect x="314" y="264" width="36" height="36" rx="8" fill="#1b2f4d"/>
+      <text x="368" y="287">Camisa clásica personalizada</text><text x="640" y="287" fill="#8d9ab0">Camisas</text>
+      <text x="800" y="287">$18.90</text><text x="930" y="287" fill="#8d9ab0">42</text>
+      <rect x="1050" y="270" width="86" height="24" rx="12" fill="#1d3a2a"/><text x="1093" y="287" text-anchor="middle" font-size="11" fill="#7fbf8e">Activo</text></g>
+    <path d="M314 316 L1216 316" stroke="#1b2b45"/>
+    <g><rect x="314" y="332" width="36" height="36" rx="8" fill="#1b2f4d"/>
+      <text x="368" y="355">Taza cerámica 11oz</text><text x="640" y="355" fill="#8d9ab0">Tazas</text>
+      <text x="800" y="355">$9.50</text><text x="930" y="355" fill="#8d9ab0">67</text>
+      <rect x="1050" y="338" width="86" height="24" rx="12" fill="#1d3a2a"/><text x="1093" y="355" text-anchor="middle" font-size="11" fill="#7fbf8e">Activo</text></g>
+    <path d="M314 384 L1216 384" stroke="#1b2b45"/>
+    <g><rect x="314" y="400" width="36" height="36" rx="8" fill="#1b2f4d"/>
+      <text x="368" y="423">Llavero acrílico redondo</text><text x="640" y="423" fill="#8d9ab0">Llaveros</text>
+      <text x="800" y="423">$4.20</text><text x="930" y="423" fill="#8d9ab0">120</text>
+      <rect x="1050" y="406" width="86" height="24" rx="12" fill="#1d3a2a"/><text x="1093" y="423" text-anchor="middle" font-size="11" fill="#7fbf8e">Activo</text></g>
+    <path d="M314 452 L1216 452" stroke="#1b2b45"/>
+    <g><rect x="314" y="468" width="36" height="36" rx="8" fill="#1b2f4d"/>
+      <text x="368" y="491">Sudadera con capucha</text><text x="640" y="491" fill="#8d9ab0">Camisas</text>
+      <text x="800" y="491">$32.00</text><text x="930" y="491" fill="#c98b8b">6</text>
+      <rect x="1050" y="474" width="86" height="24" rx="12" fill="#3a2b1d"/><text x="1093" y="491" text-anchor="middle" font-size="11" fill="#e0b474">Stock bajo</text></g>
+    <path d="M314 520 L1216 520" stroke="#1b2b45"/>
+    <g><rect x="314" y="536" width="36" height="36" rx="8" fill="#1b2f4d"/>
+      <text x="368" y="559">Tote bag de algodón</text><text x="640" y="559" fill="#8d9ab0">Otros</text>
+      <text x="800" y="559">$12.75</text><text x="930" y="559" fill="#8d9ab0">38</text>
+      <rect x="1050" y="542" width="86" height="24" rx="12" fill="#1d3a2a"/><text x="1093" y="559" text-anchor="middle" font-size="11" fill="#7fbf8e">Activo</text></g>
+    <path d="M314 588 L1216 588" stroke="#1b2b45"/>
+    <g><rect x="314" y="604" width="36" height="36" rx="8" fill="#1b2f4d"/>
+      <text x="368" y="627">Vaso térmico 20oz</text><text x="640" y="627" fill="#8d9ab0">Tazas</text>
+      <text x="800" y="627">$15.40</text><text x="930" y="627" fill="#8d9ab0">0</text>
+      <rect x="1050" y="610" width="86" height="24" rx="12" fill="#3a1d1d"/><text x="1093" y="627" text-anchor="middle" font-size="11" fill="#d98b8b">Agotado</text></g>
+    <path d="M314 656 L1216 656" stroke="#1b2b45"/>
+  </g>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#8d9ab0">
+    <text x="314" y="722">Mostrando 6 de 24 productos</text>
+    <rect x="1080" y="700" width="34" height="30" rx="8" fill="#0b1729"/><text x="1097" y="720" text-anchor="middle" fill="#f3efe6">1</text>
+    <rect x="1122" y="700" width="34" height="30" rx="8" fill="#0b1729"/><text x="1139" y="720" text-anchor="middle">2</text>
+    <rect x="1164" y="700" width="52" height="30" rx="8" fill="#0b1729"/><text x="1190" y="720" text-anchor="middle">Next</text>
+  </g>
+  <text x="290" y="784" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" letter-spacing="2" fill="#5a6880">PLACEHOLDER · assets/img/system/productos.svg</text>
+</svg>
