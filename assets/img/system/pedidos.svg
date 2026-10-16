@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Interfaz administrativa - Pedidos">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2c479"/><stop offset="1" stop-color="#a3801f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="#0b1729"/>
+  <rect width="250" height="800" fill="#071020"/>
+  <circle cx="56" cy="54" r="20" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <text x="56" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="url(#gold)">GZ</text>
+  <text x="88" y="50" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#f3efe6" letter-spacing="2">GZ STUDIO</text>
+  <text x="88" y="70" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#8d9ab0" letter-spacing="3">ADMIN PANEL</text>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14">
+    <text x="60" y="152" fill="#8d9ab0">Inicio</text>
+    <text x="60" y="206" fill="#8d9ab0">Productos</text>
+    <text x="60" y="260" fill="#8d9ab0">Diseños</text>
+    <rect x="24" y="288" width="202" height="42" rx="11" fill="#12233f"/>
+    <rect x="24" y="288" width="4" height="42" rx="2" fill="url(#gold)"/>
+    <text x="60" y="314" fill="#f3efe6">Pedidos</text>
+    <text x="60" y="368" fill="#8d9ab0">Clientes</text>
+    <text x="60" y="422" fill="#8d9ab0">Reportes</text>
+  </g>
+  <g fill="#3d4c66">
+    <rect x="38" y="142" width="12" height="12" rx="3"/><rect x="38" y="196" width="12" height="12" rx="3"/>
+    <rect x="38" y="250" width="12" height="12" rx="3"/><rect x="38" y="358" width="12" height="12" rx="3"/>
+    <rect x="38" y="412" width="12" height="12" rx="3"/>
+  </g>
+  <rect x="38" y="304" width="12" height="12" rx="3" fill="url(#gold)"/>
+
+  <rect x="250" y="0" width="1030" height="84" fill="#0e1e36"/>
+  <text x="290" y="50" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#f3efe6">Gestión de pedidos</text>
+  <circle cx="1210" cy="43" r="17" fill="url(#gold)" fill-opacity=".25" stroke="url(#gold)" stroke-width="2"/>
+
+  <rect x="290" y="124" width="950" height="634" rx="16" fill="#101f37" stroke="#c9a227" stroke-opacity=".14"/>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif">
+    <rect x="314" y="152" width="286" height="86" rx="14" fill="#0b1729" stroke="#243752"/>
+    <text x="334" y="182" font-size="11" fill="#8d9ab0" letter-spacing="1">PENDIENTES</text>
+    <text x="334" y="216" font-size="26" font-weight="600" fill="#e0b474">14</text>
+    <rect x="620" y="152" width="286" height="86" rx="14" fill="#0b1729" stroke="#243752"/>
+    <text x="640" y="182" font-size="11" fill="#8d9ab0" letter-spacing="1">EN PRODUCCION</text>
+    <text x="640" y="216" font-size="26" font-weight="600" fill="#7fb0d9">9</text>
+    <rect x="926" y="152" width="286" height="86" rx="14" fill="#0b1729" stroke="#243752"/>
+    <text x="946" y="182" font-size="11" fill="#8d9ab0" letter-spacing="1">ENTREGADOS</text>
+    <text x="946" y="216" font-size="26" font-weight="600" fill="#7fbf8e">115</text>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#8d9ab0" letter-spacing="1">
+    <text x="334" y="288">PEDIDO</text><text x="450" y="288">CLIENTE</text><text x="700" y="288">FECHA</text>
+    <text x="830" y="288">PRODUCTOS</text><text x="960" y="288">TOTAL</text><text x="1070" y="288">ESTADO</text>
+  </g>
+  <path d="M314 302 L1216 302" stroke="#243752" stroke-width="2"/>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#f3efe6">
+    <g><text x="334" y="336">#1042</text><text x="450" y="336">María López</text><text x="700" y="336" fill="#8d9ab0">12 Sep 2026</text>
+      <text x="830" y="336" fill="#8d9ab0">3</text><text x="960" y="336">$54.30</text>
+      <rect x="1070" y="318" width="106" height="26" rx="13" fill="#3a2b1d"/><text x="1123" y="336" text-anchor="middle" font-size="11" fill="#e0b474">Pendiente</text></g>
+    <path d="M314 356 L1216 356" stroke="#1b2b45"/>
+    <g><text x="334" y="390">#1041</text><text x="450" y="390">Carlos Medina</text><text x="700" y="390" fill="#8d9ab0">11 Sep 2026</text>
+      <text x="830" y="390" fill="#8d9ab0">1</text><text x="960" y="390">$18.90</text>
+      <rect x="1070" y="372" width="106" height="26" rx="13" fill="#1d2f3a"/><text x="1123" y="390" text-anchor="middle" font-size="11" fill="#7fb0d9">Producción</text></g>
+    <path d="M314 410 L1216 410" stroke="#1b2b45"/>
+    <g><text x="334" y="444">#1040</text><text x="450" y="444">Ana Torres</text><text x="700" y="444" fill="#8d9ab0">10 Sep 2026</text>
+      <text x="830" y="444" fill="#8d9ab0">5</text><text x="960" y="444">$87.15</text>
+      <rect x="1070" y="426" width="106" height="26" rx="13" fill="#1d3a2a"/><text x="1123" y="444" text-anchor="middle" font-size="11" fill="#7fbf8e">Entregado</text></g>
+    <path d="M314 464 L1216 464" stroke="#1b2b45"/>
+    <g><text x="334" y="498">#1039</text><text x="450" y="498">Luis Ramírez</text><text x="700" y="498" fill="#8d9ab0">09 Sep 2026</text>
+      <text x="830" y="498" fill="#8d9ab0">2</text><text x="960" y="498">$23.70</text>
+      <rect x="1070" y="480" width="106" height="26" rx="13" fill="#1d3a2a"/><text x="1123" y="498" text-anchor="middle" font-size="11" fill="#7fbf8e">Entregado</text></g>
+    <path d="M314 518 L1216 518" stroke="#1b2b45"/>
+    <g><text x="334" y="552">#1038</text><text x="450" y="552">Sofía Navarro</text><text x="700" y="552" fill="#8d9ab0">08 Sep 2026</text>
+      <text x="830" y="552" fill="#8d9ab0">4</text><text x="960" y="552">$61.40</text>
+      <rect x="1070" y="534" width="106" height="26" rx="13" fill="#1d2f3a"/><text x="1123" y="552" text-anchor="middle" font-size="11" fill="#7fb0d9">Producción</text></g>
+    <path d="M314 572 L1216 572" stroke="#1b2b45"/>
+    <g><text x="334" y="606">#1037</text><text x="450" y="606">Diego Herrera</text><text x="700" y="606" fill="#8d9ab0">07 Sep 2026</text>
+      <text x="830" y="606" fill="#8d9ab0">1</text><text x="960" y="606">$12.75</text>
+      <rect x="1070" y="588" width="106" height="26" rx="13" fill="#3a1d1d"/><text x="1123" y="606" text-anchor="middle" font-size="11" fill="#d98b8b">Cancelado</text></g>
+    <path d="M314 626 L1216 626" stroke="#1b2b45"/>
+    <g><text x="334" y="660">#1036</text><text x="450" y="660">Valeria Cruz</text><text x="700" y="660" fill="#8d9ab0">06 Sep 2026</text>
+      <text x="830" y="660" fill="#8d9ab0">6</text><text x="960" y="660">$98.20</text>
+      <rect x="1070" y="642" width="106" height="26" rx="13" fill="#1d3a2a"/><text x="1123" y="660" text-anchor="middle" font-size="11" fill="#7fbf8e">Entregado</text></g>
+    <path d="M314 680 L1216 680" stroke="#1b2b45"/>
+  </g>
+  <text x="314" y="730" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#8d9ab0">Mostrando 7 de 138 pedidos</text>
+  <text x="290" y="784" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" letter-spacing="2" fill="#5a6880">PLACEHOLDER · assets/img/system/pedidos.svg</text>
+</svg>

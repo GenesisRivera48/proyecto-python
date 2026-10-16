@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Diseño Minimalista">
+  <defs>
+    <linearGradient id="marble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf7f1"/><stop offset="1" stop-color="#e3dfd6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2c479"/><stop offset="1" stop-color="#a3801f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#marble)"/>
+  <circle cx="400" cy="216" r="46" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <g fill="none" stroke="#0d1c33" stroke-opacity=".85" stroke-width="4" stroke-linejoin="round">
+    <path d="M232 380 L332 268 L400 344 L468 246 L568 380 Z"/>
+  </g>
+  <path d="M232 380 L568 380" stroke="#0d1c33" stroke-opacity=".85" stroke-width="4"/>
+  <path d="M300 424 L500 424" stroke="url(#gold)" stroke-width="2"/>
+  <text x="400" y="486" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" letter-spacing="12" fill="#0d1c33" fill-opacity=".7">MINIMAL</text>
+  <text x="40" y="556" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#0d1c33" fill-opacity=".4">PLACEHOLDER &#183; assets/img/designs/d05-minimalista.svg</text>
+</svg>

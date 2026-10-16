@@ -1,0 +1,11 @@
+Model Information:
+* title:	Travel Tumbler
+* source:	https://sketchfab.com/3d-models/travel-tumbler-ee1541ce202a4a248076114f9597d410
+* author:	wongcha_um (https://sketchfab.com/wongcha_um)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Travel Tumbler" (https://sketchfab.com/3d-models/travel-tumbler-ee1541ce202a4a248076114f9597d410) by wongcha_um (https://sketchfab.com/wongcha_um) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

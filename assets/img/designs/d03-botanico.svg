@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Diseño Botánico">
+  <defs>
+    <linearGradient id="marble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#faf7f1"/><stop offset="1" stop-color="#e3dfd6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2c479"/><stop offset="1" stop-color="#a3801f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#marble)"/>
+  <path d="M400 430 C400 330 400 230 400 150" stroke="#0d1c33" stroke-opacity=".85" stroke-width="4" fill="none"/>
+  <g fill="none" stroke-width="3">
+    <path d="M400 380 C340 372 306 330 312 286 C372 292 400 336 400 380 Z" stroke="#0d1c33" stroke-opacity=".8"/>
+    <path d="M400 330 C460 322 494 280 488 236 C428 242 400 286 400 330 Z" stroke="url(#gold)"/>
+    <path d="M400 268 C352 262 324 228 328 192 C376 196 400 232 400 268 Z" stroke="url(#gold)"/>
+    <path d="M400 214 C444 208 470 178 466 146 C422 150 400 182 400 214 Z" stroke="#0d1c33" stroke-opacity=".8"/>
+  </g>
+  <circle cx="400" cy="140" r="12" fill="url(#gold)"/>
+  <text x="400" y="486" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="20" letter-spacing="12" fill="#0d1c33" fill-opacity=".7">BOTANICO</text>
+  <text x="40" y="556" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#0d1c33" fill-opacity=".4">PLACEHOLDER &#183; assets/img/designs/d03-botanico.svg</text>
+</svg>

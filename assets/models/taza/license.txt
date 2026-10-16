@@ -1,0 +1,8 @@
+Model Information:
+* title:	Taza
+* source:	https://sketchfab.com/3d-models/taza-6bb5e0879f234a8888038d960c869f4b
+* author:	little bread 34 (https://sketchfab.com/panesito34)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
