@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Interfaz administrativa - Diseños">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2c479"/><stop offset="1" stop-color="#a3801f"/>
+    </linearGradient>
+    <linearGradient id="marble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f2ec"/><stop offset="1" stop-color="#ddd8cd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="#0b1729"/>
+  <rect width="250" height="800" fill="#071020"/>
+  <circle cx="56" cy="54" r="20" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <text x="56" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="url(#gold)">GZ</text>
+  <text x="88" y="50" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#f3efe6" letter-spacing="2">GZ STUDIO</text>
+  <text x="88" y="70" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#8d9ab0" letter-spacing="3">ADMIN PANEL</text>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14">
+    <text x="60" y="152" fill="#8d9ab0">Inicio</text>
+    <text x="60" y="206" fill="#8d9ab0">Productos</text>
+    <rect x="24" y="234" width="202" height="42" rx="11" fill="#12233f"/>
+    <rect x="24" y="234" width="4" height="42" rx="2" fill="url(#gold)"/>
+    <text x="60" y="260" fill="#f3efe6">Diseños</text>
+    <text x="60" y="314" fill="#8d9ab0">Pedidos</text>
+    <text x="60" y="368" fill="#8d9ab0">Clientes</text>
+    <text x="60" y="422" fill="#8d9ab0">Reportes</text>
+  </g>
+  <g fill="#3d4c66">
+    <rect x="38" y="142" width="12" height="12" rx="3"/><rect x="38" y="196" width="12" height="12" rx="3"/>
+    <rect x="38" y="304" width="12" height="12" rx="3"/><rect x="38" y="358" width="12" height="12" rx="3"/>
+    <rect x="38" y="412" width="12" height="12" rx="3"/>
+  </g>
+  <rect x="38" y="250" width="12" height="12" rx="3" fill="url(#gold)"/>
+
+  <rect x="250" y="0" width="1030" height="84" fill="#0e1e36"/>
+  <text x="290" y="50" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#f3efe6">Gestión de diseños</text>
+  <circle cx="1210" cy="43" r="17" fill="url(#gold)" fill-opacity=".25" stroke="url(#gold)" stroke-width="2"/>
+
+  <rect x="290" y="124" width="950" height="634" rx="16" fill="#101f37" stroke="#c9a227" stroke-opacity=".14"/>
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#8d9ab0">
+    <rect x="314" y="152" width="70" height="32" rx="16" fill="url(#gold)"/><text x="349" y="173" text-anchor="middle" fill="#0b1729" font-weight="600">Todos</text>
+    <rect x="392" y="152" width="82" height="32" rx="16" fill="#0b1729"/><text x="433" y="173" text-anchor="middle">Camisas</text>
+    <rect x="482" y="152" width="70" height="32" rx="16" fill="#0b1729"/><text x="517" y="173" text-anchor="middle">Tazas</text>
+    <rect x="560" y="152" width="86" height="32" rx="16" fill="#0b1729"/><text x="603" y="173" text-anchor="middle">Llaveros</text>
+  </g>
+  <rect x="1064" y="150" width="152" height="38" rx="19" fill="url(#gold)"/>
+  <text x="1140" y="174" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#0b1729">+ Subir diseño</text>
+
+  <g font-family="Inter, 'Segoe UI', Arial, sans-serif">
+    <g>
+      <rect x="314" y="216" width="280" height="238" rx="14" fill="#0b1729" stroke="#243752"/>
+      <rect x="330" y="232" width="248" height="150" rx="10" fill="url(#marble)"/>
+      <circle cx="454" cy="307" r="38" fill="none" stroke="#0d1c33" stroke-width="3"/>
+      <text x="454" y="316" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#0d1c33">GZ</text>
+      <text x="330" y="410" font-size="14" fill="#f3efe6">Monograma clásico</text>
+      <text x="330" y="432" font-size="11" fill="#8d9ab0">Camisas · usado 34 veces</text>
+    </g>
+    <g>
+      <rect x="625" y="216" width="280" height="238" rx="14" fill="#0b1729" stroke="#243752"/>
+      <rect x="641" y="232" width="248" height="150" rx="10" fill="url(#marble)"/>
+      <path d="M765 262 L805 342 L725 342 Z" fill="none" stroke="#0d1c33" stroke-width="3"/>
+      <circle cx="765" cy="316" r="30" fill="none" stroke="url(#gold)" stroke-width="3"/>
+      <text x="641" y="410" font-size="14" fill="#f3efe6">Geometría dorada</text>
+      <text x="641" y="432" font-size="11" fill="#8d9ab0">Tazas · usado 21 veces</text>
+    </g>
+    <g>
+      <rect x="936" y="216" width="280" height="238" rx="14" fill="#0b1729" stroke="#243752"/>
+      <rect x="952" y="232" width="248" height="150" rx="10" fill="url(#marble)"/>
+      <path d="M1076 356 C1076 300 1076 280 1076 268" stroke="#0d1c33" stroke-width="3"/>
+      <path d="M1076 330 C1040 326 1022 300 1026 276 C1060 280 1076 306 1076 330 Z" fill="none" stroke="url(#gold)" stroke-width="3"/>
+      <path d="M1076 300 C1112 296 1130 270 1126 246 C1092 250 1076 276 1076 300 Z" fill="none" stroke="#0d1c33" stroke-width="3"/>
+      <text x="952" y="410" font-size="14" fill="#f3efe6">Rama botánica</text>
+      <text x="952" y="432" font-size="11" fill="#8d9ab0">Camisas · usado 18 veces</text>
+    </g>
+    <g>
+      <rect x="314" y="474" width="280" height="238" rx="14" fill="#0b1729" stroke="#243752"/>
+      <rect x="330" y="490" width="248" height="150" rx="10" fill="url(#marble)"/>
+      <text x="454" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#0d1c33">HAZLO</text>
+      <text x="454" y="592" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="url(#gold)">TUYO</text>
+      <text x="330" y="668" font-size="14" fill="#f3efe6">Tipografía editorial</text>
+      <text x="330" y="690" font-size="11" fill="#8d9ab0">Tazas · usado 27 veces</text>
+    </g>
+    <g>
+      <rect x="625" y="474" width="280" height="238" rx="14" fill="#0b1729" stroke="#243752"/>
+      <rect x="641" y="490" width="248" height="150" rx="10" fill="url(#marble)"/>
+      <circle cx="765" cy="540" r="20" fill="none" stroke="url(#gold)" stroke-width="3"/>
+      <path d="M700 604 L742 552 L768 584 L800 540 L830 604 Z" fill="none" stroke="#0d1c33" stroke-width="3"/>
+      <text x="641" y="668" font-size="14" fill="#f3efe6">Montaña minimal</text>
+      <text x="641" y="690" font-size="11" fill="#8d9ab0">Llaveros · usado 15 veces</text>
+    </g>
+    <g>
+      <rect x="936" y="474" width="280" height="238" rx="14" fill="#0b1729" stroke="#243752"/>
+      <rect x="952" y="490" width="248" height="150" rx="10" fill="url(#marble)"/>
+      <path d="M1020 578 A56 56 0 0 1 1132 578 Z" fill="url(#gold)"/>
+      <g stroke="#f5f2ec" stroke-width="5"><path d="M1024 560 L1128 560"/><path d="M1030 540 L1122 540"/></g>
+      <path d="M1010 604 q20 -14 40 0 t40 0 t40 0" fill="none" stroke="#0d1c33" stroke-width="3"/>
+      <text x="952" y="668" font-size="14" fill="#f3efe6">Sol retro</text>
+      <text x="952" y="690" font-size="11" fill="#8d9ab0">Llaveros · usado 12 veces</text>
+    </g>
+  </g>
+  <text x="290" y="784" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" letter-spacing="2" fill="#5a6880">PLACEHOLDER · assets/img/system/diseno.svg</text>
+</svg>
