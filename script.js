@@ -294,7 +294,7 @@
       id: 'Mi perfil',
       boton: 'Perfil',
       titulo: 'Reportes y estadísticas',
-      imagen: 'assets/img/system/reportes.jpg',
+      imagen: 'assets/img/system/perfil.jpg',
       descripcion: 'Ingresos por mes, participación de cada categoría y los productos más vendidos del periodo. Los reportes se pueden filtrar por rango de fechas.'
     }
   ];
